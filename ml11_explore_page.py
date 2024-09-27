@@ -13,7 +13,7 @@ def explore_page():
     
     # Distribution of age values
     st.warning("Age Distribution")
-    fig, ax = plt.subplots(figsize=(4,4))
+    fig, ax = plt.subplots(figsize=(3,3))
     sns.histplot(insurance_dataset['age'], bins=30, kde=True, ax=ax)
     plt.title('Age Distribution')
     st.pyplot(fig)
